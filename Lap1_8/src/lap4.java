@@ -15,19 +15,22 @@ public class lap4 {
 		b = scanner.nextFloat();
 		System.out.println("Nhập c: ");
 		c = scanner.nextFloat();
-		
-		float delta = (float)(Math.pow(b,2) - (4*a*c));
-		if(delta>0) {
-			float x1 = (float)(-b+Math.sqrt(delta))/(2*a);
-			float x2 = (float)(-b-Math.sqrt(delta))/(2*a);
-			System.out.printf("Phương trình có 2 nghiệm phân biệt: %.2f và %.2f",x1,x2);
-		}
-		else if(delta==0) {
-			float x = -b / (2*a);
-			System.out.printf("Phương trình có nghiệm kép x1 = x2 = %.2f",x);
-		}
-		else {
-			System.out.println("Phương trình vô nghiệm");
+		if(a==0) {
+			System.out.printf("Phương trình có 1 nghiệm: %.2f",-c/b);
+		} else {
+			float delta = (float)(Math.pow(b,2) - (4*a*c));
+			if(delta>0) {
+				float x1 = (float)(-b+Math.sqrt(delta))/(2*a);
+				float x2 = (float)(-b-Math.sqrt(delta))/(2*a);
+				System.out.printf("Phương trình có 2 nghiệm phân biệt: %.2f và %.2f",x1,x2);
+			}
+			else if(delta==0) {
+				float x = -b / (2*a);
+				System.out.printf("Phương trình có nghiệm kép x1 = x2 = %.2f",x);
+			}
+			else {
+				System.out.println("Phương trình vô nghiệm");
+			}
 		}
 		scanner.close();
 	}
