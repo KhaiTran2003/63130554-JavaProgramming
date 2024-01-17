@@ -1,5 +1,5 @@
 
-public class lap6 {
+public class lap3_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
