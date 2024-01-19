@@ -1,3 +1,4 @@
+package lap1;
 import java.util.Scanner;
 
 public class lap1 {

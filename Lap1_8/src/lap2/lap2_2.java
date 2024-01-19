@@ -1,6 +1,7 @@
+package lap2;
 import java.util.Scanner;
 
-public class lap4 {
+public class lap2_2{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
